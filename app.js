@@ -93,8 +93,9 @@
       e.preventDefault();
       msg.textContent = "";
 
-      const nameInput = /** @type {HTMLInputElement} */ (document.getElementById("name"));
-      const emailInput = /** @type {HTMLInputElement} */ (document.getElementById("email"));
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      if (!(nameInput instanceof HTMLInputElement) || !(emailInput instanceof HTMLInputElement)) return;
 
       const name = nameInput.value.trim();
       const email = normalizeEmail(emailInput.value);
