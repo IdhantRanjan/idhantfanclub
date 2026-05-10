@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Idhant Fan Club — Waiting List</title>
+    <meta
+      name="description"
+      content="Join the waiting list for The Idhant Fan Club. See who is leading the line and read what members are saying."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#signup">Skip to signup</a>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="eyebrow">Membership opens in waves</p>
+        <h1 class="title">The Idhant Fan Club</h1>
+        <p class="lede">
+          A waiting list for people who already know. When your spot opens, you will hear from us first.
+        </p>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="#signup">Join the waiting list</a>
+          <a class="btn btn-ghost" href="#leaderboard">View the line</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="stat-band" aria-labelledby="stat-heading">
+        <div class="wrap stat-band-inner">
+          <div>
+            <h2 id="stat-heading" class="stat-value">2M+</h2>
+            <p class="stat-label">People on the Idhant Fan Club waiting list worldwide</p>
+          </div>
+          <p class="stat-note">
+            Rankings below reflect early supporters and verified invites. New joiners are assigned a place in line automatically.
+          </p>
+        </div>
+      </section>
+
+      <section id="leaderboard" class="section leaderboard" aria-labelledby="board-heading">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="board-heading" class="section-title">The first fifty in line</h2>
+            <p class="section-sub">
+              Public leaderboard. <span class="accent-name">Olivia Yu</span> holds the number-one spot as our founding superfan.
+            </p>
+          </div>
+          <ol class="board-list" id="board-list"></ol>
+        </div>
+      </section>
+
+      <section id="signup" class="section signup" aria-labelledby="signup-heading">
+        <div class="wrap signup-grid">
+          <div>
+            <h2 id="signup-heading" class="section-title">Request your place</h2>
+            <p class="section-sub">
+              No spam, no drama—just a quiet queue and the occasional note when something good is about to drop.
+            </p>
+            <ul class="signup-points">
+              <li>One email per person; duplicates merge into your existing spot.</li>
+              <li>You can leave the list anytime from any message we send.</li>
+            </ul>
+          </div>
+          <div class="signup-card">
+            <form id="waitlist-form" class="form" novalidate>
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required maxlength="120" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Reserve my spot</button>
+              <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-labelledby="testimonials-heading">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="testimonials-heading" class="section-title">Testimonials</h2>
+            <p class="section-sub">What people say after they finally get past the velvet rope.</p>
+          </div>
+          <div class="quotes">
+            <figure class="quote">
+              <blockquote>
+                Oh my gosh Idhant is so amazing—I am genuinely so happy I got to join the fan club. Like, best decision of my year.
+              </blockquote>
+              <figcaption>— A founding member</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                I thought waiting lists were corny until I met this community. Idhant’s energy is unreal; I glaze unapologetically.
+              </blockquote>
+              <figcaption>— Mei, Tier 2 invite</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                Zero notes. Idhant is kind, sharp, funny, and the whole club feels intentional. I tell everyone to get in line.
+              </blockquote>
+              <figcaption>— Priya, early access</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                I screamed when my invite arrived. The Idhant Fan Club delivers on vibes without being sloppy—premium all the way.
+              </blockquote>
+              <figcaption>— Jordan, waited 6 months</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                Idhant remembered my name at the meet-and-greet. I am not recovered. Join the waiting list—you will understand.
+              </blockquote>
+              <figcaption>— Camille, backstage alum</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                Serious fan behavior: I refreshed my inbox for weeks. Worth it. Idhant deserves every ounce of hype.
+              </blockquote>
+              <figcaption>— Nia, Discord mod</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>The Idhant Fan Club · Waiting list demonstration</p>
+        <p class="footer-muted">Crafted like a stationery suite, not a stock template.</p>
+      </div>
+    </footer>
+
+    <script src="leaderboard-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
